@@ -6,7 +6,7 @@
 </head>
 
 <body id="PageTop">
-     <audio autoplay="true"  loop="loop">
+     <audio autoplay="true"  loop="loop" id="audio">
         <source src="/aa.mp3" >
     </audio>
     <div class="wrap">
@@ -346,6 +346,12 @@
     <script src="/lib/homepage/js/tweenjs-0.6.0.min.js"></script>
     <script src="/lib/homepage/js/jazy19.min.js"></script>
      <script src="/lib/plug/cometcursor.js"></script>
+    <script type="text/javascript">
+        var audio = document.getElementById("audio");
+        if(audio.paused){
+            music.play();
+        }
+    </script>
 </body>
 
 </html>
